@@ -196,7 +196,7 @@ class Window {
 				event(new Event(EOut));
 			default:
 			}
-		case MouseDown if (!hxd.System.getValue(IsTouch)):
+		case MouseDown:
 			curMouseX = e.mouseX;
 			curMouseY = e.mouseY;
 			eh = new Event(EPush, e.mouseX, e.mouseY);
@@ -207,7 +207,7 @@ class Window {
 			case 2: 1;
 			case x: x;
 			}
-		case MouseUp if (!hxd.System.getValue(IsTouch)):
+		case MouseUp:
 			curMouseX = e.mouseX;
 			curMouseY = e.mouseY;
 			eh = new Event(ERelease, e.mouseX, e.mouseY);
@@ -217,7 +217,7 @@ class Window {
 			case 2: 1;
 			case x: x;
 			};
-		case MouseMove if (!hxd.System.getValue(IsTouch)):
+		case MouseMove:
 			curMouseX = e.mouseX;
 			curMouseY = e.mouseY;
 			eh = new Event(EMove, e.mouseX, e.mouseY);

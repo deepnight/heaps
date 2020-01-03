@@ -279,7 +279,7 @@ class System {
 			platform == IOS || platform == Android;
 		case IsTouch:
 			// TODO: check PC touch screens?
-			platform == IOS || platform == Android;
+			platform == IOS || platform == Android #if hlsdl || platform==PC #end;
 		#end
 		default:
 			return false;
